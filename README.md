@@ -1,5 +1,3 @@
-# real-time-face-detection-opencv
-A practical Computer Vision project for detecting faces in images and webcam video using Python and OpenCV.
 # Real-Time Face Detection with OpenCV
 
 This is a practical Computer Vision project using Python and OpenCV.
@@ -20,6 +18,7 @@ The goal of this project is to practice object detection basics and understand h
 - Draw bounding boxes around detected faces
 - Save the detected face image
 - Perform real-time face detection using a webcam
+- Adjust detection parameters to reduce false positives
 
 ## Technologies
 
@@ -28,30 +27,45 @@ The goal of this project is to practice object detection basics and understand h
 - Haar Cascade Classifier
 
 ## Project Structure
+
+```text
 real-time-face-detection-opencv/
 │
 ├── images/
-│   ├── face.jpg
-│   └── face_detected.jpg
+│ ├── face.jpg
+│ └── face_detected.jpg
 │
 ├── 1_face_detection_image.py
 ├── 2_face_detection_webcam.py
 ├── requirements.txt
 └── README.md
+```
 
 ## How to Run
 
 First, install the required package:
+
+```bash
 pip install -r requirements.txt
+```
 
 Run face detection on an image:
+
+```bash
 python 1_face_detection_image.py
+```
 
 Run real-time face detection with webcam:
+
+```bash
 python 2_face_detection_webcam.py
+```
 
 To stop the webcam window, press:
+
+```text
 q
+```
 
 ## Output Example
 
@@ -71,6 +85,7 @@ Through this project, I practiced:
 - Converting images to grayscale
 - Using a Haar Cascade classifier for face detection
 - Drawing bounding boxes around detected faces
+- Adjusting Haar Cascade detection parameters such as `scaleFactor`, `minNeighbors`, and `minSize` to reduce false positives and improve face detection accuracy
 - Saving processed images
 - Working with real-time webcam input
 - Building a structured Computer Vision project for GitHub
